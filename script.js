@@ -21,9 +21,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function toggleProjectView(project) {
   let imagePreview = project.querySelector("img");
+  let imageHeight = imagePreview.offsetHeight;
   imagePreview.classList.toggle("hidden");
 
   let projectInfos = project.querySelector("div");
+  projectInfos.style.height = imageHeight + "px";
   projectInfos.classList.toggle("hidden");
 }
 
