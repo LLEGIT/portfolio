@@ -5,4 +5,4 @@ En bref, apprendre à mieux me connaître et en déduire que je suis le prochain
 
 ## Comment me contacter
 - 📧 email: [M'envoyer un mail](mailto:theogillet.bordeaux@outlook.com)
-- 🔗 LinkedIn: [Théo Gillet sur LinkedIn](https://www.linkedin.com/in/theogillet/)https://www.linkedin.com/in/theogillet/)
+- 🔗 LinkedIn: [Théo Gillet sur LinkedIn](https://www.linkedin.com/in/theogillet)
