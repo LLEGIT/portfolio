@@ -11,21 +11,15 @@
     <title>Développeur Web Junior</title>
 </head>
 
-<body class="font-serif m-5 p-5 border-solid border-2">
+<body class="font-serif m-5 p-5 border-solid border-2 border-black">
     <h1 class="text-2xl">Théo Gillet</h1>
     <h2 class="text-slate-500">Développeur full stack</h2>
-    <div class="flex flex-wrap space-x-3">
-        <a href="#bio" class="underline decoration-2 decoration-zinc-700">Qui suis-je ?</a>
-        <a href="#skills" class="underline decoration-2 decoration-amber-800">Mes compétences</a>
-        <a href="#career-path" class="underline decoration-2 decoration-lime-400">Mon parcours professionnel</a>
-        <a href="#studies" class="underline decoration-2 decoration-cyan-400">Mon parcours scolaire</a>
-        <a href="#projects" class="underline decoration-2 decoration-emerald-700">Mes projets</a>
-        <a href="./assets/resume.pdf" class="underline decoration-2 decoration-slate-500" download>Mon cv</a>
-        <a href="#contact" class="underline decoration-2 decoration-fuchsia-700">Contact</a>
-    </div>
-    <div class="mt-5 space-y-5 lg:space-y-0 lg:flex lg:flex-wrap lg:justify-between lg:gap-10">
-        <section id="bio" class="space-y-2 lg:w-[48%]">
-            <h3 class="font-bold mb-2">Développeur junior intrigué par la création d'applications réactives qui font sens...</h3>
+    <div class="flex flex-col items-centerdecoration-zinc-700 space-y-2">
+        <img src="./assets/pic_of_me.jpg" alt="Image de profil" class="w-[60%] hover:rounded-2xl">
+        <a class="section-link p-2 border-solid border-2 border-amber-500" href="#bio">Qui suis-je ?</a>
+        <section id="bio" class="space-y-2 lg:w-[48%] hidden">
+            <h3 class="font-bold mb-2">Développeur junior intrigué par la création d'applications réactives qui font
+                sens...</h3>
             <p class="text-justify text-sm">Théo, 22 ans, habitant dans la banlieue bordelaise... Bon, vous connaissez
                 la
                 chanson
@@ -33,7 +27,8 @@
             <p class="text-justify text-sm">Je pense que nous aurons tout le temps de se connaître, alors passons à des
                 faits
                 plus concrets.</p>
-            <p class="text-justify text-sm">Au cours de mon apprentissage du développement web, j'ai réalisé la complexité
+            <p class="text-justify text-sm">Au cours de mon apprentissage du développement web, j'ai réalisé la
+                complexité
                 et le
                 nombre de métiers qui gravitent autour de la moindre application, site e-commerce, etc.</p>
             <p class="text-justify text-sm">J'ai mieux compris les enjeux qui découlent des plus grandes plateformes
@@ -53,9 +48,10 @@
                 travail en équipe, ouverte d'esprit, persévérante. Néanmoins, je peux être parfois tête en l'air, un
                 brin blagueur et bavard.</p>
         </section>
-        <section id="skills" class="space-y-2 lg:w-[48%]">
+        <a class="section-link p-2 border-solid border-2 border-lime-600" href="#skills">Mes compétences</a>
+        <section id="skills" class="space-y-2 lg:w-[48%] hidden">
             <h3 class="font-bold mb-2">Mes compétences</h3>
-            <div class="lg:flex lg:justify-between">
+            <div class="space-y-2 lg:flex lg:justify-between">
                 <div class="container p-2 border-solid border-2 lg:w-[33%]">
                     <h4 class="text-sm underline mb-2">Langages/frameworks</h4>
                     <div class="flex flex-wrap justify-between gap-2">
@@ -123,7 +119,8 @@
                 </div>
             </div>
         </section>
-        <section id="career-path">
+        <a class="section-link p-2 border-solid border-2 border-sky-600" href="#career-path">Mon parcours professionnel</a>
+        <section id="career-path" class="lg:w-[48%] hidden">
             <h3 class="font-bold mb-2">Mon expérience professionnelle</h3>
             <ul>
                 <li class="space-y-2">
@@ -136,12 +133,14 @@
                         <li>Refactorisation du code existant</li>
                         <li>Transition de l'entreprise en marketplace</li>
                         <li>Création de “landing pages” pour les opérations commerciales</li>
-                        <li><span class="underline">Technos : </span> PHP, Symfony, React.js, MUI, Sass, Docker, Nest.js</li>
+                        <li><span class="underline">Technos : </span> PHP, Symfony, React.js, MUI, Sass, Docker, Nest.js
+                        </li>
                     </ul>
                 </li>
             </ul>
         </section>
-        <section id="studies" class="lg:w-[48%]">
+        <a class="section-link p-2 border-solid border-2 border-violet-700" href="#studies">Mon parcours scolaire</a>
+        <section id="studies" class="lg:w-[48%] hidden">
             <h3 class="font-bold mb-2">Mon parcours</h3>
             <ol class="list-decimal space-y-3 px-4">
                 <li>
@@ -201,7 +200,8 @@
                 </li>
             </ol>
         </section>
-        <section id="projects" class="space-y-5 lg:w-[48%]">
+        <a class="section-link p-2 border-solid border-2 border-red-400" href="#projects">Mes projets</a>
+        <section id="projects" class="space-y-5 lg:w-[48%] hidden">
             <h3 class="font-bold mb-2">Mes projets</h3>
             <div class="lg:flex lg:flex-wrap lg:justify-between lg:gap-5">
                 <div class="project lg:w-[48%]">
@@ -212,10 +212,10 @@
                             voyage
                         </p>
                         <p class="text-sm"><strong>Technos</strong> : Next.js, Nest.js, Mongodb</p>
-                        <a class="text-sm underline decoration-indigo-400 hover:decoration-orange-600 hover:decoration-2" target="_blank"
-                            href="https://github.com/LLEGIT/bemyguide">Lien Github (frontend)</a>
-                        <a class="text-sm underline decoration-indigo-400 hover:decoration-orange-600 hover:decoration-2" target="_blank"
-                            href="https://github.com/LLEGIT/bemyguide-api">Lien Github (backend)</a>
+                        <a class="text-sm underline decoration-indigo-400 hover:decoration-orange-600 hover:decoration-2"
+                            target="_blank" href="https://github.com/LLEGIT/bemyguide">Lien Github (frontend)</a>
+                        <a class="text-sm underline decoration-indigo-400 hover:decoration-orange-600 hover:decoration-2"
+                            target="_blank" href="https://github.com/LLEGIT/bemyguide-api">Lien Github (backend)</a>
                     </div>
                 </div>
                 <div class="project lg:w-[48%]">
@@ -224,8 +224,8 @@
                     <div class="hidden w-full p-4 flex flex-col gap-1 border-solid border-2">
                         <p class="text-sm">Réplique du célèbre jeu en ligne Skribbl.io</p>
                         <p class="text-sm"><strong>Technos</strong> : React.js, Typescript, Golang, MySQL</p>
-                        <a class="text-sm underline decoration-indigo-400 hover:decoration-orange-600 hover:decoration-2" target="_blank"
-                            href="https://github.com/LLEGIT/skribbl.go">Lien Github</a>
+                        <a class="text-sm underline decoration-indigo-400 hover:decoration-orange-600 hover:decoration-2"
+                            target="_blank" href="https://github.com/LLEGIT/skribbl.go">Lien Github</a>
                     </div>
                 </div>
                 <div class="project lg:w-[48%]">
@@ -234,8 +234,8 @@
                     <div class="hidden w-full p-4 flex flex-col gap-1 border-solid border-2">
                         <p class="text-sm">Portfolio de moi-même en React.js</p>
                         <p class="text-sm"><strong>Technos</strong> : React.js, EmailJS, GoogleMapsApi</p>
-                        <a class="text-sm underline decoration-indigo-400 hover:decoration-orange-600 hover:decoration-2" target="_blank"
-                            href="https://github.com/LLEGIT/my-portfolio">Lien Github</a>
+                        <a class="text-sm underline decoration-indigo-400 hover:decoration-orange-600 hover:decoration-2"
+                            target="_blank" href="https://github.com/LLEGIT/my-portfolio">Lien Github</a>
                     </div>
                 </div>
                 <div class="project lg:w-[48%]">
@@ -244,13 +244,15 @@
                     <div class="hidden w-full p-4 flex flex-col gap-1 border-solid border-2">
                         <p class="text-sm">Réseau social inspiré de Twitter et de des fonctionnalités</p>
                         <p class="text-sm"><strong>Technos</strong> : PHP, JavaScript, MySQL</p>
-                        <a class="text-sm underline decoration-indigo-400 hover:decoration-orange-600 hover:decoration-2" target="_blank"
-                            href="https://github.com/LLEGIT/fake_social_network">Lien Github</a>
+                        <a class="text-sm underline decoration-indigo-400 hover:decoration-orange-600 hover:decoration-2"
+                            target="_blank" href="https://github.com/LLEGIT/fake_social_network">Lien Github</a>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="contact" class="lg:w-[48%]">
+        <a class="p-2 border-solid border-2 border-fuchsia-700" href="./assets/resume.pdf" download>Mon cv 🢅</a>
+        <a class="section-link p-2 border-solid border-2 border-cyan-500" href="#contact">Contact</a>
+        <section id="contact" class="lg:w-[48%] hidden">
             <h3 class="font-bold mb-2">Contact</h3>
             <form id="contact-form" action="/" method="post"
                 class="flex flex-col gap-5 p-2 border-dotted border-black border lg:w-[50%]">
@@ -282,10 +284,15 @@
                     <textarea class="w-full border-solid border-black border" name="message" id="message" cols="30"
                         rows="8" placeholder="Votre message..." required></textarea>
                 </div>
-                <button class="border-solid border-black border" type="submit">Envoyer</button>
+                <button class="border-solid border-black border" type="submit">🢂 Envoyer</button>
             </form>
         </section>
     </div>
+
+    <footer class="w-full fixed bottom-0 left-0 bg-white pt-1">
+        <p class="text-xs text-center">© Théo GILLET | Développeur full stack - 2023</p>
+    </footer>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./script.js"></script>
 </body>
