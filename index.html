@@ -12,206 +12,249 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="font-mono">
-    <header
-        class="w-full p-2 bg-[#3ef694] flex items-top justify-between fixed top-0 left-0 border-solid border-b border-black">
-        <div>
-            <h1 class="text-2xl">théo<span class="font-bold">gillet</span></h1>
-            <h2 class="text-md">Développeur web & applications</h2>
+<body>
+    <div
+        class="lg:px-24 lg:mx-[15%] lg:py-5 lg:flex lg:justify-between lg:items-center lg:border-solid lg:border-x lg:border-black">
+        <header
+            class="w-full lg:w-fit p-2 bg-[#3ef694] flex items-top justify-between fixed top-0 left-0 border-solid border-b border-black lg:border-2 lg:p-4 lg:relative">
+            <div>
+                <h1 class="text-2xl lg:text-3xl">théo<span class="font-bold">gillet</span></h1>
+                <h2 class="text-md">Développeur web & applications</h2>
+            </div>
+            <div class="lg:hidden">
+                <img id="menu-icon" class="w-5"
+                    src="https://cdn.icon-icons.com/icons2/2024/PNG/512/lines_menu_burger_icon_123889.png"
+                    alt="Icône menu burger">
+            </div>
+        </header>
+        <div id="menu"
+            class="border-solid border border-black flex flex-col gap-2 fixed lg:relative hidden lg:flex top-5 right-5 lg:top-0 lg:right-0 w-fit bg-white p-2 lg:border-0 lg:p-0">
+            <a href="#bio" class="bg-black text-white menu-link text-sm">Qui suis-je ?</a>
+            <a href="#skills" class="menu-link text-sm">Mes compétences</a>
+            <a href="#projects" class="menu-link text-sm">Mes projets</a>
+            <a href="./assets/resume.pdf" download class="text-sm">Mon cv 🢅</a>
         </div>
-        <div class="lg:hidden">
-            <img id="menu-icon" class="w-5"
-                src="https://cdn.icon-icons.com/icons2/2024/PNG/512/lines_menu_burger_icon_123889.png"
-                alt="Icône menu burger">
-        </div>
-    </header>
-    <div id="menu"
-        class="border-solid border border-black flex flex-col gap-2 fixed hidden top-5 right-5 w-fit bg-white p-2">
-        <a href="#bio" class="bg-black text-white menu-link">Qui suis-je ?</a>
-        <a href="#skills" class="menu-link">Mes compétences</a>
-        <a href="#projects" class="menu-link">Mes projets</a>
-        <a href="./assets/resume.pdf" download>Mon cv 🢅</a>
     </div>
-    <div class="mt-20 space-y-5 lg:space-y-0 lg:flex lg:flex-wrap lg:justify-between lg:gap-10">
-        <section id="bio" class="space-y-2 lg:w-[48%] p-3">
-            <h3 class="text-xl p-2 bg-black text-white w-fit">Qui suis-je ?</h3>
-            <h4 class="text-2xl font-bold mb-2">Développeur junior intrigué par la création d'applications réactives qui
-                font
-                sens...</h4>
-            <p class="text-justify text-sm">Théo, 22 ans, habitant dans la banlieue bordelaise... Bon, vous connaissez
-                la
-                chanson
-                non ?</p>
-            <p class="text-justify text-sm">Je pense que nous aurons tout le temps de se connaître, alors passons à des
-                faits
-                plus concrets.</p>
-            <p class="text-justify text-sm">Au cours de mon apprentissage du <span class="bg-[#3ef694]">développement
-                    web</span>, j'ai réalisé la
-                complexité
-                et le
-                nombre de métiers qui gravitent autour de la moindre application, site e-commerce, etc.</p>
-            <p class="text-justify text-sm">J'ai mieux compris les enjeux qui découlent des plus grandes plateformes
-                telles que
-                Google, Airbnb, comme de plus petites entreprises, voulant se donner une visibilité en ligne.</p>
-            <p class="text-justify text-sm">Je suis monté en compétence sur des frameworks frontend ou backend tels que
-                <span class="bg-[#3ef694]">Symfony</span>, <span class="bg-[#3ef694]">React.js</span>, <span
-                    class="bg-[#3ef694]">Nest.js</span>, <span class="bg-[#3ef694]">Next.js</span> et bien d'autres
-                encore. J'en ai compris que le développement d'applications pouvait être vu de
-                la manière suivante : Vous pouvez très bien commencer avec un bâton et un caillou (Html/Css et
-                JavaScript) ou directement avec un buldozer (<span class="bg-[#3ef694]">React</span>, <span
-                    class="bg-[#3ef694]">Django</span>, <span class="bg-[#3ef694]">Ruby on Rails</span>, etc.)
-            </p>
-            <p class="text-justify text-sm">
-                J'ai pu également aborder les enjeux du <span class="bg-[#3ef694]">SEO</span>, <span
-                    class="bg-[#3ef694]">SEA</span> grâce à mon expérience en entreprise (<a href="#career-path"
-                    class="underline decoration-2 decoration-[#3ef694]">voir plus bas</a>) et
-                comprendre à quel point c'est le fer de lance des business en ligne modernes.
-            </p>
-            <p class="text-justify text-sm">Si vous me recrutiez, sachez ceci : je suis une personne <span
-                    class="bg-emerald-100">motivée</span>, <span class="bg-emerald-100">tournée sur le travail en
-                    équipe</span> , <span class="bg-emerald-100">ouverte d'esprit</span>, <span
-                    class="bg-emerald-100">persévérante</span>. Néanmoins, je peux être parfois <span
-                    class="bg-red-200">tête en l'air</span>, <span class="bg-red-200">un brin blagueur</span> et <span
-                    class="bg-red-200">bavard</span>.</p>
-        </section>
-        <section id="skills" class="space-y-2 lg:w-[48%] bg-emerald-100 p-3">
-            <h3 class="text-xl p-2 bg-black text-white w-fit">Mes compétences</h3>
-            <p class="text-sm text-justify">A travers mes études et mon parcours professionnel (<a
-                    class="underline decoration-2 decoration-[#3ef694]" href="./assets/resume.pdf" download>cf. mon
-                    cv</a>), j'ai pu développer des compétences techniques aussi bien du côté client que serveur d'une
-                application. Je saurais être un atout dans le <span class="underline decoration-2">développement de
-                    votre
-                    business</span> en ligne, votre outil de gestion, votre ERP, etc. Voici une <span
-                    class="underline decoration-2">liste non exhaustive</span> de langages/frameworks ou outils avec
-                lesquels j'ai
-                d'ores et déjà pu travailler :</p>
 
-            <div class="flex flex-wrap gap-1">
-                <img class="w-10 lg:w-20 p-1"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-                <img class="w-10 lg:w-20 p-1"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
-                <img class="w-10 lg:w-20 p-1"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" />
-                <img class="w-10 lg:w-20 p-1"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
-                <img class="w-10 lg:w-20 p-1"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
-                <img class="w-10 lg:w-20 p-1"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/symfony/symfony-original.svg" />
-                <img class="w-10 lg:w-20 p-1"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" />
-                <img class="w-10 lg:w-20 p-1"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-plain.svg" />
-                <img class="w-10 lg:w-20 p-1"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" />
-                <img class="w-10 lg:w-20 p-1"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" />
-                <img class="w-10 lg:w-20 p-1"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" />
-                <img class="w-10 lg:w-20 p-1"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
-                <img class="w-10 lg:w-20 p-1"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg" />
-                <img class="w-10 lg:w-20 p-1"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" />
-                <img class="w-10 lg:w-20 p-1"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
-                <img class="w-10 lg:w-20 p-1"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" />
-                <img class="w-10 lg:w-20 p-1"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" />
-                <img class="w-10 lg:w-20 p-1"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jetbrains/jetbrains-original.svg" />
-                <img class="w-10 lg:w-20 p-1"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" />
-                <img class="w-10 lg:w-20 p-1"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" />
-                <img class="w-10 lg:w-20 p-1"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original-wordmark.svg" />
-                <img class="w-10 lg:w-20 p-1"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg" />
-                <img class="w-10 lg:w-20 p-1"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" />
-                <img class="w-10 lg:w-20 p-1"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
-                <img class="w-10 lg:w-20 p-1"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" />
-                <img class="w-10 lg:w-20 p-1"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
-            </div>
-        </section>
-        <section id="projects" class="space-y-5 lg:w-[48%] p-3">
-            <h3 class="text-xl p-2 bg-black text-white w-fit">Mes projets</h3>
-            <div class="space-y-10">
-                <div class="project lg:w-[48%]">
-                    <h4 class="text-2xl font-bold mb-2">Mecatechnic.com (2023)</h4>
-                    <div class="space-y-2">
-                        <p class="text-sm">Refonte du site ecommerce, intégration de landings page pour les opérations
-                            commerciales (Black Friday, soldes été, etc.)
-                        </p>
-                        <p class="text-sm p-2 bg-black text-white"><strong>Technos</strong> : <span class="bg-emerald-600">PHP Symfony</span>,
-                            <span class="bg-emerald-600">Sass</span>, <span class="bg-emerald-600">Docker</span>, <span
-                                class="bg-emerald-600">jQuery</span>
-                        </p>
-                        <a class="text-sm underline decoration-2 decoration-emerald-200 hover:decoration-orange-600 hover:decoration-2"
-                            target="_blank" href="https://www.mecatechnic.com">Lien du site</a>
-                    </div>
-                    <img class="mt-5" src="./assets/project1.png" alt="Bemyguide image projet">
+    <div class="lg:p-0 mt-20 lg:mt-0 space-y-5 lg:space-y-0 lg:flex lg:flex-wrap lg:justify-between">
+        <div class="lg:px-[15%] lg:border-y lg:border-solid lg:border-black">
+            <section id="bio" class="p-5 lg:p-0 space-y-2 lg:py-24 lg:px-24 lg:border-solid lg:border-black lg:border-x">
+                <h3 class="text-xl p-2 bg-black text-white w-fit">Qui suis-je ?</h3>
+                <h4 class="text-2xl font-bold mb-2">Développeur junior intrigué par la création d'applications
+                    réactives
+                    qui
+                    font
+                    sens...</h4>
+                <p class="text-justify text-sm">Théo, 22 ans, habitant dans la banlieue bordelaise... Bon, vous
+                    connaissez
+                    la
+                    chanson
+                    non ?</p>
+                <p class="text-justify text-sm">Je pense que nous aurons tout le temps de se connaître, alors
+                    passons à
+                    des
+                    faits
+                    plus concrets.</p>
+                <p class="text-justify text-sm">Au cours de mon apprentissage du <span
+                        class="bg-[#3ef694]">développement
+                        web</span>, j'ai réalisé la
+                    complexité
+                    et le
+                    nombre de métiers qui gravitent autour de la moindre application, site e-commerce, etc.</p>
+                <p class="text-justify text-sm">J'ai mieux compris les enjeux qui découlent des plus grandes
+                    plateformes
+                    telles que
+                    Google, Airbnb, comme de plus petites entreprises, voulant se donner une visibilité en ligne.
+                </p>
+                <p class="text-justify text-sm">Je suis monté en compétence sur des frameworks frontend ou backend
+                    tels
+                    que
+                    <span class="bg-[#3ef694]">Symfony</span>, <span class="bg-[#3ef694]">React.js</span>, <span
+                        class="bg-[#3ef694]">Nest.js</span>, <span class="bg-[#3ef694]">Next.js</span> et bien
+                    d'autres
+                    encore. J'en ai compris que le développement d'applications pouvait être vu de
+                    la manière suivante : Vous pouvez très bien commencer avec un bâton et un caillou (Html/Css et
+                    JavaScript) ou directement avec un buldozer (<span class="bg-[#3ef694]">React</span>, <span
+                        class="bg-[#3ef694]">Django</span>, <span class="bg-[#3ef694]">Ruby on Rails</span>, etc.)
+                </p>
+                <p class="text-justify text-sm">
+                    J'ai pu également aborder les enjeux du <span class="bg-[#3ef694]">SEO</span>, <span
+                        class="bg-[#3ef694]">SEA</span> grâce à mon expérience en entreprise (<a href="#career-path"
+                        class="underline decoration-2 decoration-[#3ef694]">voir plus bas</a>) et
+                    comprendre à quel point c'est le fer de lance des business en ligne modernes.
+                </p>
+                <p class="text-justify text-sm">Si vous me recrutiez, sachez ceci : je suis une personne <span
+                        class="bg-emerald-100">motivée</span>, <span class="bg-emerald-100">tournée sur le travail
+                        en
+                        équipe</span> , <span class="bg-emerald-100">ouverte d'esprit</span>, <span
+                        class="bg-emerald-100">persévérante</span>. Néanmoins, je peux être parfois <span
+                        class="bg-[#f8be7f]">tête en l'air</span>, <span class="bg-[#f8be7f]">un brin blagueur</span> et
+                    <span class="bg-[#f8be7f]">bavard</span>.
+                </p>
+                <p class="text-justify text-sm">
+                    Durant mon temps personnel, je suis passionné par le tennis, la randonnée en montagne, le cinéma et aime écrire des histoires policière ou de SF.
+                </p>
+            </section>
+        </div>
+
+        <div class="lg:px-[15%]">
+            <section id="skills"
+                class="p-5 lg:p-0 bg-emerald-100 space-y-4 lg:py-24 lg:px-24 lg:border-solid lg:border-black lg:border-x">
+                <h3 class="text-xl p-2 bg-black text-white w-fit">Mes compétences</h3>
+                <p class="text-sm text-justify">A travers mes études et mon parcours professionnel (<a
+                        class="underline decoration-2 decoration-[#3ef694]" href="./assets/resume.pdf" download>cf. mon
+                        cv</a>), j'ai pu développer des compétences techniques aussi bien du côté client que serveur
+                    d'une
+                    application. Je saurais être un atout dans le <span class="underline decoration-2">développement de
+                        votre
+                        business</span> en ligne, votre outil de gestion, votre ERP, etc. Voici une <span
+                        class="underline decoration-2">liste non exhaustive</span> de langages/frameworks ou outils avec
+                    lesquels j'ai
+                    d'ores et déjà pu travailler :</p>
+
+                <div class="flex flex-wrap gap-2 lg:gap-4">
+                    <img class="w-10 lg:w-20 grayscale contrast-200 invert"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+                    <img class="w-10 lg:w-20 grayscale contrast-200 invert"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
+                    <img class="w-10 lg:w-20 grayscale contrast-200"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" />
+                    <img class="w-10 lg:w-20 grayscale contrast-200"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
+                    <img class="w-10 lg:w-20 grayscale contrast-200 invert"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+                    <img class="w-10 lg:w-20 grayscale contrast-200"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/symfony/symfony-original.svg" />
+                    <img class="w-10 lg:w-20 grayscale contrast-200"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" />
+                    <img class="w-10 lg:w-20 grayscale contrast-200"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-plain.svg" />
+                    <img class="w-10 lg:w-20 grayscale contrast-200"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" />
+                    <img class="w-10 lg:w-20 grayscale contrast-200 invert"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" />
+                    <img class="w-10 lg:w-20 grayscale contrast-200 invert"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" />
+                    <img class="w-10 lg:w-20 grayscale contrast-200 invert"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+                    <img class="w-10 lg:w-20 grayscale contrast-200 invert"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg" />
+                    <img class="w-10 lg:w-20 grayscale contrast-200 invert"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" />
+                    <img class="w-10 lg:w-20 grayscale contrast-200"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
+                    <img class="w-10 lg:w-20 grayscale contrast-200 invert"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" />
+                    <img class="w-10 lg:w-20 grayscale contrast-200 invert"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" />
+                    <img class="w-10 lg:w-20 grayscale contrast-200"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jetbrains/jetbrains-original.svg" />
+                    <img class="w-10 lg:w-20 grayscale contrast-200"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" />
+                    <img class="w-10 lg:w-20 grayscale contrast-200 invert"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" />
+                    <img class="w-10 lg:w-20 grayscale contrast-200"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original-wordmark.svg" />
+                    <img class="w-10 lg:w-20 grayscale contrast-200"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg" />
+                    <img class="w-10 lg:w-20 grayscale contrast-200 invert"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" />
+                    <img class="w-10 lg:w-20 grayscale contrast-200"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
+                    <img class="w-10 lg:w-20 grayscale contrast-200 invert"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" />
+                    <img class="w-10 lg:w-20 grayscale contrast-200"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
                 </div>
-                <div class="project lg:w-[48%]">
-                    <h4 class="text-2xl font-bold mb-2">Bemyguide (2023)</h4>
-                    <div class="space-y-2">
-                        <p class="text-sm">Plateforme touristique pour s'informer sur une destination et planifier un
-                            voyage
-                        </p>
-                        <p class="text-sm p-2 bg-black text-white"><strong>Technos</strong> : <span class="bg-emerald-600">Next.js</span>, <span
-                                class="bg-emerald-600">Nest.js</span>, <span class="bg-emerald-600">Mongodb</span></p>
-                        <a class="text-sm underline decoration-2 decoration-emerald-200 hover:decoration-orange-600 hover:decoration-2"
-                            target="_blank" href="https://github.com/LLEGIT/bemyguide">Lien Github (frontend)</a>
-                        <a class="text-sm underline decoration-2 decoration-emerald-200 hover:decoration-orange-600 hover:decoration-2"
-                            target="_blank" href="https://github.com/LLEGIT/bemyguide-api">Lien Github (backend)</a>
+            </section>
+        </div>
+
+        <div class="lg:px-[15%] lg:border-solid lg:border-black lg:border-t">
+            <section id="projects" class="p-5 lg:p-0 space-y-2 lg:py-24 lg:px-24 lg:border-solid lg:border-black lg:border-x">
+                <h3 class="text-xl p-2 bg-black text-white w-fit">Mes projets</h3>
+                <div class="space-y-10">
+                    <div class="project">
+                        <h4 class="text-2xl font-bold mb-2">Mecatechnic.com (2023)</h4>
+                        <div class="space-y-2">
+                            <p class="text-sm">Refonte du site ecommerce, intégration de landings page pour les
+                                opérations
+                                commerciales (Black Friday, soldes été, etc.)
+                            </p>
+                            <p class="text-sm p-3 border-solid border-black border"><strong>Technos</strong> : <span
+                                    class="bg-cyan-300">PHP Symfony</span>,
+                                <span class="bg-cyan-300">Sass</span>, <span class="bg-cyan-300">Docker</span>,
+                                <span class="bg-cyan-300">jQuery</span>
+                            </p>
+                            <a class="text-sm underline decoration-2 decoration-emerald-200 hover:decoration-orange-600 hover:decoration-2"
+                                target="_blank" href="https://www.mecatechnic.com">Lien du site</a>
+                        </div>
+                        <img class="mt-5" src="./assets/project1.png" alt="Bemyguide image projet">
                     </div>
-                    <img class="mt-5" src="./assets/project2.png" alt="Bemyguide image projet">
-                </div>
-                <div class="project lg:w-[48%]">
-                    <h4 class="text-2xl font-bold mb-2">Skribbl.go (2023)</h4>
-                    <div class="space-y-2">
-                        <p class="text-sm">Réplique du célèbre jeu en ligne Skribbl.io</p>
-                        <p class="text-sm p-2 bg-black text-white"><strong>Technos</strong> : <span class="bg-emerald-600">React.js</span>, <span
-                                class="bg-emerald-600">Typescript</span>, <span class="bg-emerald-600">Golang</span>, <span
-                                class="bg-emerald-600">MySQL</span></p>
-                        <a class="text-sm underline decoration-2 decoration-emerald-200 hover:decoration-orange-600 hover:decoration-2"
-                            target="_blank" href="https://github.com/LLEGIT/skribbl.go">Lien Github</a>
+                    <div class="project">
+                        <h4 class="text-2xl font-bold mb-2">Bemyguide (2023)</h4>
+                        <div class="space-y-2">
+                            <p class="text-sm">Plateforme touristique pour s'informer sur une destination et planifier
+                                un
+                                voyage
+                            </p>
+                            <p class="text-sm p-3 border-solid border-black border"><strong>Technos</strong> : <span
+                                    class="bg-cyan-300">Next.js</span>, <span class="bg-cyan-300">Nest.js</span>,
+                                <span class="bg-cyan-300">Mongodb</span>
+                            </p>
+                            <a class="text-sm underline decoration-2 decoration-emerald-200 hover:decoration-orange-600 hover:decoration-2"
+                                target="_blank" href="https://github.com/LLEGIT/bemyguide">Lien Github (frontend)</a>
+                            <a class="text-sm underline decoration-2 decoration-emerald-200 hover:decoration-orange-600 hover:decoration-2"
+                                target="_blank" href="https://github.com/LLEGIT/bemyguide-api">Lien Github (backend)</a>
+                        </div>
+                        <img class="mt-5" src="./assets/project2.png" alt="Bemyguide image projet">
                     </div>
-                    <img class="mt-5" src="./assets/project3.png" alt="Skribbl.go image projet">
-                </div>
-                <div class="project lg:w-[48%]">
-                    <h4 class="text-2xl font-bold mb-2">Portfolio React (2023)</h4>
-                    <div class="space-y-2">
-                        <p class="text-sm">Portfolio de moi-même en React.js</p>
-                        <p class="text-sm p-2 bg-black text-white"><strong>Technos</strong> : <span class="bg-emerald-600">React.js</span>, <span class="bg-emerald-600">EmailJS</span> , <span class="bg-emerald-600">GoogleMapsApi</span></p>
-                        <a class="text-sm underline decoration-2 decoration-emerald-200 hover:decoration-orange-600 hover:decoration-2"
-                            target="_blank" href="https://github.com/LLEGIT/my-portfolio">Lien Github</a>
+                    <div class="project">
+                        <h4 class="text-2xl font-bold mb-2">Skribbl.go (2023)</h4>
+                        <div class="space-y-2">
+                            <p class="text-sm">Réplique du célèbre jeu en ligne Skribbl.io</p>
+                            <p class="text-sm p-3 border-solid border-black border"><strong>Technos</strong> : <span
+                                    class="bg-cyan-300">React.js</span>, <span
+                                    class="bg-cyan-300">Typescript</span>,
+                                <span class="bg-cyan-300">Golang</span>, <span class="bg-cyan-300">MySQL</span>
+                            </p>
+                            <a class="text-sm underline decoration-2 decoration-emerald-200 hover:decoration-orange-600 hover:decoration-2"
+                                target="_blank" href="https://github.com/LLEGIT/skribbl.go">Lien Github</a>
+                        </div>
+                        <img class="mt-5" src="./assets/project3.png" alt="Skribbl.go image projet">
                     </div>
-                    <img class="mt-5" src="./assets/project4.png" alt="Portfolio React image projet">
-                </div>
-                <div class="project lg:w-[48%]">
-                    <h4 class="text-2xl font-bold mb-2">Fake social network (2022)</h4>
-                    <div class="space-y-2">
-                        <p class="text-sm">Réseau social inspiré de Twitter et de des fonctionnalités</p>
-                        <p class="text-sm p-2 bg-black text-white"><strong>Technos</strong> : <span class="bg-emerald-600">PHP</span>, <span class="bg-emerald-600">JavaScript</span>, <span class="bg-emerald-600">MySQL</span></p>
-                        <a class="text-sm underline decoration-2 decoration-emerald-200 hover:decoration-orange-600 hover:decoration-2"
-                            target="_blank" href="https://github.com/LLEGIT/fake_social_network">Lien Github</a>
+                    <div class="project">
+                        <h4 class="text-2xl font-bold mb-2">Portfolio React (2023)</h4>
+                        <div class="space-y-2">
+                            <p class="text-sm">Portfolio de moi-même en React.js</p>
+                            <p class="text-sm p-3 border-solid border-black border"><strong>Technos</strong> : <span
+                                    class="bg-cyan-300">React.js</span>, <span class="bg-cyan-300">EmailJS</span>
+                                , <span class="bg-cyan-300">GoogleMapsApi</span></p>
+                            <a class="text-sm underline decoration-2 decoration-emerald-200 hover:decoration-orange-600 hover:decoration-2"
+                                target="_blank" href="https://github.com/LLEGIT/my-portfolio">Lien Github</a>
+                        </div>
+                        <img class="mt-5" src="./assets/project4.png" alt="Portfolio React image projet">
                     </div>
-                    <img class="mt-5" src="./assets/project5.jpg" alt="Fake social network image projet">
+                    <div class="project">
+                        <h4 class="text-2xl font-bold mb-2">Fake social network (2022)</h4>
+                        <div class="space-y-2">
+                            <p class="text-sm">Réseau social inspiré de Twitter et de des fonctionnalités</p>
+                            <p class="text-sm p-3 border-solid border-black border"><strong>Technos</strong> : <span
+                                    class="bg-cyan-300">PHP</span>, <span class="bg-cyan-300">JavaScript</span>,
+                                <span class="bg-cyan-300">MySQL</span>
+                            </p>
+                            <a class="text-sm underline decoration-2 decoration-emerald-200 hover:decoration-orange-600 hover:decoration-2"
+                                target="_blank" href="https://github.com/LLEGIT/fake_social_network">Lien Github</a>
+                        </div>
+                        <img class="mt-5" src="./assets/project5.jpg" alt="Fake social network image projet">
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </div>
-    <footer class="w-full p-2 bg-[#3ef694] flex flex-col border-solid border-t border-black mt-5">
-        <p class="text-md">théo<span class="font-bold">gillet</span></p>
-        <p class="text-sm">Développeur web & applications</p>
+    <footer
+        class="w-full p-2 bg-[#3ef694] flex flex-col border-solid border-t border-black lg:h-56 lg:justify-center lg:items-center">
+        <p class="text-md lg:text-2xl">théo<span class="font-bold">gillet</span></p>
+        <p class="text-sm lg:text-md">Développeur web & applications</p>
         <div class="flex flex-wrap items-center gap-5">
             <a class="text-sm" href="mailto:theogillet.bordeaux@outlook.com"><span class="underline">M'écrire un
                     mail</span>🢅</a>
@@ -223,6 +266,22 @@
             </a>
         </div>
     </footer>
+
+    <style>
+        /* ia-writer-mono-latin-400-normal */
+        @font-face {
+            font-family: "iA Writer Mono";
+            font-style: normal;
+            font-display: swap;
+            font-weight: 400;
+            src: url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@latest/latin-400-normal.woff2) format("woff2"), url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@latest/latin-400-normal.woff) format("woff");
+        }
+
+        body {
+            font-family: "iA Writer Mono";
+        }
+    </style>
+
     <script src="./script.js"></script>
 </body>
 
