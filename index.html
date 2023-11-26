@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -8,16 +8,17 @@
         content="Développeur junior passionné par la création d'applications intuitives. Découvrez mon profil et mes compétences en développement web.">
     <meta name="keywords"
         content="développeur web, développement d'applications, Symfony, React.js, Nest.js, Next.js, SEO, SEA, Bordeaux">
-    <title>Développeur Web Junior</title>
+    <title>Théo Gillet, développeur web et d'applications</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/9414/9414296.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
 </head>
 
 <body>
     <div
         class="lg:px-24 lg:mx-[15%] lg:py-5 lg:flex lg:justify-between lg:items-center lg:border-solid lg:border-l-8 lg:border-r lg:border-black">
         <header
-            class="w-full lg:w-fit p-2 bg-[#3ef694] flex items-top justify-between fixed top-0 left-0 border-solid border-b border-black lg:border-2 lg:p-4 lg:relative">
+            class="w-full lg:w-fit p-2 bg-[#3ef694] flex items-top justify-between fixed top-0 left-0 border-solid border-b border-black lg:border-2 lg:p-4 lg:relative z-20">
             <div>
                 <h1 class="text-2xl lg:text-3xl">théo<span class="font-bold">gillet</span></h1>
                 <h2 class="text-md">Développeur web & applications</h2>
@@ -29,17 +30,17 @@
             </div>
         </header>
         <div id="menu"
-            class="border-solid border border-black flex flex-col gap-2 fixed lg:relative hidden lg:flex top-5 right-5 lg:top-0 lg:right-0 w-fit bg-white p-2 lg:border-0 lg:p-0">
+            class="border-solid border border-black flex flex-col gap-2 fixed lg:relative hidden lg:flex top-5 right-5 lg:top-0 lg:right-0 w-fit bg-white p-2 lg:border-0 lg:p-0 z-30">
             <a href="#bio" class="bg-black text-white menu-link text-sm hover:bg-slate-400">Qui suis-je ?</a>
             <a href="#skills" class="menu-link text-sm hover:bg-slate-400">Mes compétences</a>
             <a href="#projects" class="menu-link text-sm hover:bg-slate-400">Mes projets</a>
-            <a href="./assets/resume.pdf" download class="text-sm hover:bg-slate-400">Mon cv 🢅</a>
+            <a href="./assets/resume.pdf" download class="text-sm hover:bg-slate-400">Télécharger mon CV</a>
         </div>
     </div>
 
     <div class="lg:p-0 mt-20 lg:mt-0 space-y-5 lg:space-y-0 lg:flex lg:flex-wrap lg:justify-between">
-        <div class="lg:px-[15%] lg:border-y lg:border-solid lg:border-black">
-            <section id="bio" class="p-5 lg:p-0 space-y-2 lg:py-24 lg:px-24 lg:border-solid lg:border-black lg:border-l lg:border-r-8">
+        <div class="lg:px-[15%] lg:border-y lg:border-solid lg:border-black background-diagonal">
+            <section id="bio" class="p-5 lg:p-0 space-y-2 lg:py-24 lg:px-24 lg:border-solid lg:border-black lg:border-l lg:border-r-8 bg-white">
                 <h3 class="text-xl p-2 bg-black text-white w-fit">Qui suis-je ?</h3>
                 <h4 class="text-2xl font-bold mb-2">Développeur junior intrigué par la création d'applications
                     réactives
@@ -101,8 +102,8 @@
             <section id="skills"
                 class="p-5 lg:p-0 bg-emerald-100 space-y-4 lg:py-24 lg:px-24 lg:border-solid lg:border-black lg:border-l-8 lg:border-r">
                 <h3 class="text-xl p-2 bg-black text-white w-fit">Mes compétences</h3>
-                <p class="text-sm text-justify">A travers mes études et mon parcours professionnel (<a
-                        class="underline decoration-2 decoration-[#3ef694]" href="./assets/resume.pdf" download>cf. mon
+                <p class="text-sm text-justify">De part mes études et mon parcours professionnel (<a
+                        class="underline decoration-2 decoration-[#3ef694]" href="./assets/resume.pdf" download>voir
                         cv</a>), j'ai pu développer des compétences techniques aussi bien du côté client que serveur
                     d'une
                     application. Je saurais être un atout dans le <span class="underline decoration-2">développement de
@@ -112,7 +113,7 @@
                     lesquels j'ai
                     d'ores et déjà pu travailler :</p>
 
-                <div class="flex flex-wrap gap-2 lg:gap-4">
+                <div class="flex flex-wrap gap-2 lg:gap-4 relative z-10">
                     <img class="w-10 lg:w-20 grayscale contrast-200 invert"
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
                     <img class="w-10 lg:w-20 grayscale contrast-200 invert"
@@ -169,8 +170,8 @@
             </section>
         </div>
 
-        <div class="lg:px-[15%] lg:border-solid lg:border-black lg:border-t">
-            <section id="projects" class="p-5 lg:p-0 space-y-5 lg:py-24 lg:px-24 lg:border-solid lg:border-black lg:border-l lg:border-r-8">
+        <div class="lg:px-[15%] lg:border-solid lg:border-black lg:border-t background-diagonal">
+            <section id="projects" class="p-5 lg:p-0 space-y-5 lg:py-24 lg:px-24 lg:border-solid lg:border-black lg:border-l lg:border-r-8 bg-white">
                 <h3 class="text-xl p-2 bg-black text-white w-fit">Mes projets</h3>
                 <div class="space-y-10">
                     <div class="project">
@@ -203,6 +204,7 @@
                             </p>
                             <a class="text-sm underline decoration-2 decoration-emerald-200 hover:decoration-orange-600 hover:decoration-2"
                                 target="_blank" href="https://github.com/LLEGIT/bemyguide">Lien Github (frontend)</a>
+                            <br>
                             <a class="text-sm underline decoration-2 decoration-emerald-200 hover:decoration-orange-600 hover:decoration-2"
                                 target="_blank" href="https://github.com/LLEGIT/bemyguide-api">Lien Github (backend)</a>
                         </div>
@@ -251,6 +253,7 @@
             </section>
         </div>
     </div>
+    
     <footer
         class="w-full p-2 bg-[#3ef694] flex flex-col border-solid border-t border-black lg:h-56 lg:justify-center lg:items-center">
         <p class="text-md lg:text-2xl">théo<span class="font-bold">gillet</span></p>
@@ -266,22 +269,7 @@
             </a>
         </div>
     </footer>
-
-    <style>
-        /* ia-writer-mono-latin-400-normal */
-        @font-face {
-            font-family: "iA Writer Mono";
-            font-style: normal;
-            font-display: swap;
-            font-weight: 400;
-            src: url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@latest/latin-400-normal.woff2) format("woff2"), url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@latest/latin-400-normal.woff) format("woff");
-        }
-
-        body {
-            font-family: "iA Writer Mono";
-        }
-    </style>
-
+    
     <script src="./script.js"></script>
 </body>
 
