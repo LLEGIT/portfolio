@@ -9,23 +9,33 @@
     <meta name="keywords"
         content="développeur web, développement d'applications, Symfony, React.js, Nest.js, Next.js, SEO, SEA, Bordeaux">
     <title>Développeur Web Junior</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="font-serif m-5 p-5 border-solid border-2">
-    <h1 class="text-2xl">Théo Gillet</h1>
-    <h2 class="text-slate-500">Développeur full stack</h2>
-    <div class="flex flex-wrap space-x-3">
-        <a href="#bio" class="underline decoration-2 decoration-zinc-700">Qui suis-je ?</a>
-        <a href="#skills" class="underline decoration-2 decoration-amber-800">Mes compétences</a>
-        <a href="#career-path" class="underline decoration-2 decoration-lime-400">Mon parcours professionnel</a>
-        <a href="#studies" class="underline decoration-2 decoration-cyan-400">Mon parcours scolaire</a>
-        <a href="#projects" class="underline decoration-2 decoration-emerald-700">Mes projets</a>
-        <a href="./assets/resume.pdf" class="underline decoration-2 decoration-slate-500" download>Mon cv</a>
-        <a href="#contact" class="underline decoration-2 decoration-fuchsia-700">Contact</a>
+<body class="font-mono">
+    <header class="w-full p-2 bg-[#3ef694] flex items-top justify-between fixed top-0 left-0 border-solid border-b-2 border-black">
+        <div>
+            <h1 class="text-2xl">théo<span class="font-bold">gillet</span></h1>
+            <h2 class="text-md">Développeur web & applications</h2>
+        </div>
+        <div class="lg:hidden">
+            <img id="menu-icon" class="w-5"
+                src="https://cdn.icon-icons.com/icons2/2024/PNG/512/lines_menu_burger_icon_123889.png"
+                alt="Icône menu burger">
+        </div>
+    </header>
+    <div id="menu"
+        class="border-solid border border-black flex flex-col gap-2 fixed hidden top-5 right-5 w-fit bg-white p-2">
+        <a href="#bio" class="bg-black text-white menu-link">Qui suis-je ?</a>
+        <a href="#skills" class="menu-link">Mes compétences</a>
+        <a href="#projects" class="menu-link">Mes projets</a>
+        <a href="./assets/resume.pdf" download>Mon cv 🢅</a>
     </div>
-    <div class="mt-5 space-y-5 lg:space-y-0 lg:flex lg:flex-wrap lg:justify-between lg:gap-10">
-        <section id="bio" class="space-y-2 lg:w-[48%]">
-            <h3 class="font-bold mb-2">Développeur junior intrigué par la création d'applications réactives qui font sens...</h3>
+    <div class="mt-20 space-y-5 lg:space-y-0 lg:flex lg:flex-wrap lg:justify-between lg:gap-10">
+        <section id="bio" class="space-y-2 lg:w-[48%] p-3">
+            <h3 class="text-xl p-2 bg-black text-white w-fit">Qui suis-je ?</h3>
+            <h4 class="font-bold mb-2">Développeur junior intrigué par la création d'applications réactives qui font
+                sens...</h4>
             <p class="text-justify text-sm">Théo, 22 ans, habitant dans la banlieue bordelaise... Bon, vous connaissez
                 la
                 chanson
@@ -33,173 +43,99 @@
             <p class="text-justify text-sm">Je pense que nous aurons tout le temps de se connaître, alors passons à des
                 faits
                 plus concrets.</p>
-            <p class="text-justify text-sm">Au cours de mon apprentissage du développement web, j'ai réalisé la complexité
+            <p class="text-justify text-sm">Au cours de mon apprentissage du <span class="bg-[#3ef694]">développement
+                    web</span>, j'ai réalisé la
+                complexité
                 et le
                 nombre de métiers qui gravitent autour de la moindre application, site e-commerce, etc.</p>
             <p class="text-justify text-sm">J'ai mieux compris les enjeux qui découlent des plus grandes plateformes
                 telles que
                 Google, Airbnb, comme de plus petites entreprises, voulant se donner une visibilité en ligne.</p>
             <p class="text-justify text-sm">Je suis monté en compétence sur des frameworks frontend ou backend tels que
-                Symfony, React.js, Nest.js,
-                Next.js et bien d'autres encore. J'en ai compris que le développement d'applications pouvait être vu de
+                <span class="bg-[#3ef694]">Symfony</span>, <span class="bg-[#3ef694]">React.js</span>, <span
+                    class="bg-[#3ef694]">Nest.js</span>, <span class="bg-[#3ef694]">Next.js</span> et bien d'autres
+                encore. J'en ai compris que le développement d'applications pouvait être vu de
                 la manière suivante : Vous pouvez très bien commencer avec un bâton et un caillou (Html/Css et
-                JavaScript) ou directement avec un buldozer (React, Django, Ruby on Rails, etc.)</p>
+                JavaScript) ou directement avec un buldozer (<span class="bg-[#3ef694]">React</span>, <span
+                    class="bg-[#3ef694]">Django</span>, <span class="bg-[#3ef694]">Ruby on Rails</span>, etc.)
+            </p>
             <p class="text-justify text-sm">
-                J'ai pu également aborder les enjeux du SEO, SEA grâce à mon expérience en entreprise (voir plus bas) et
+                J'ai pu également aborder les enjeux du <span class="bg-[#3ef694]">SEO</span>, <span
+                    class="bg-[#3ef694]">SEA</span> grâce à mon expérience en entreprise (<a href="#career-path"
+                    class="underline decoration-2 decoration-[#3ef694]">voir plus bas</a>) et
                 comprendre à quel point c'est le fer de lance des business en ligne modernes.
             </p>
-            <p class="text-justify text-sm">Si vous me recrutiez, sachez ceci : je suis une personne motivée, tournée
-                sur le
-                travail en équipe, ouverte d'esprit, persévérante. Néanmoins, je peux être parfois tête en l'air, un
-                brin blagueur et bavard.</p>
+            <p class="text-justify text-sm">Si vous me recrutiez, sachez ceci : je suis une personne <span
+                    class="bg-emerald-100">motivée</span>, <span class="bg-emerald-100">tournée sur le travail en
+                    équipe</span> , <span class="bg-emerald-100">ouverte d'esprit</span>, <span
+                    class="bg-emerald-100">persévérante</span>. Néanmoins, je peux être parfois <span
+                    class="bg-red-200">tête en l'air</span>, <span class="bg-red-200">un brin blagueur</span> et <span
+                    class="bg-red-200">bavard</span>.</p>
         </section>
-        <section id="skills" class="space-y-2 lg:w-[48%]">
-            <h3 class="font-bold mb-2">Mes compétences</h3>
-            <div class="lg:flex lg:justify-between">
-                <div class="container p-2 border-solid border-2 lg:w-[33%]">
-                    <h4 class="text-sm underline mb-2">Langages/frameworks</h4>
-                    <div class="flex flex-wrap justify-between gap-2">
-                        <img class="w-10 lg:w-20"
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-                        <img class="w-10 lg:w-20"
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
-                        <img class="w-10 lg:w-20"
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" />
-                        <img class="w-10 lg:w-20"
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
-                        <img class="w-10 lg:w-20"
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
-                        <img class="w-10 lg:w-20"
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/symfony/symfony-original.svg" />
-                        <img class="w-10 lg:w-20"
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" />
-                        <img class="w-10 lg:w-20"
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-plain.svg" />
-                        <img class="w-10 lg:w-20"
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" />
-                        <img class="w-10 lg:w-20"
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" />
-                    </div>
-                </div>
-                <div class="container p-2 border-solid border-2 lg:w-[33%]">
-                    <h4 class="text-sm underline mb-2">Style de la page</h4>
-                    <div class="flex flex-wrap justify-between gap-2">
-                        <img class="w-10 lg:w-20"
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
-                        <img class="w-10 lg:w-20"
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg" />
-                        <img class="w-10 lg:w-20"
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" />
-                        <img class="w-10 lg:w-20"
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
-                        <img class="w-10 lg:w-20"
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" />
-                    </div>
-                </div>
-                <div class="container p-2 border-solid border-2 lg:w-[33%]">
-                    <h4 class="text-sm underline mb-2">Environnement de travail</h4>
-                    <div class="flex flex-wrap justify-between gap-2">
-                        <img class="w-10 lg:w-20"
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" />
-                        <img class="w-10 lg:w-20"
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jetbrains/jetbrains-original.svg" />
-                        <img class="w-10 lg:w-20"
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" />
-                        <img class="w-10 lg:w-20"
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" />
-                        <img class="w-10 lg:w-20"
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original-wordmark.svg" />
-                        <img class="w-10 lg:w-20"
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg" />
-                        <img class="w-10 lg:w-20"
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" />
-                        <img class="w-10 lg:w-20"
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
-                        <img class="w-10 lg:w-20"
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" />
-                        <img class="w-10 lg:w-20"
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
-                    </div>
-                </div>
+        <section id="skills" class="space-y-2 lg:w-[48%] bg-emerald-100 p-3">
+            <h3 class="text-xl p-2 bg-black text-white w-fit">Mes compétences</h3>
+            <p class="text-sm text-justify">A travers mes études et mon parcours professionnel (<a
+                    class="underline decoration-2 decoration-[#3ef694]" href="./assets/resume.pdf" download>cf. mon
+                    cv</a>), j'ai pu développer des compétences techniques aussi bien du côté client que serveur d'une
+                application. Je saurais être un atout dans le <span class="underline decoration-2">développement de votre
+                    business</span> en ligne, votre outil de gestion, votre ERP, etc. Voici une <span
+                    class="underline decoration-2">liste non exhaustive</span> de langages/frameworks ou outils avec lesquels j'ai
+                d'ores et déjà pu travailler :</p>
+
+            <div class="flex flex-wrap gap-1">
+                <img class="w-10 lg:w-20 p-1"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+                <img class="w-10 lg:w-20 p-1"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
+                <img class="w-10 lg:w-20 p-1"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" />
+                <img class="w-10 lg:w-20 p-1"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
+                <img class="w-10 lg:w-20 p-1"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+                <img class="w-10 lg:w-20 p-1"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/symfony/symfony-original.svg" />
+                <img class="w-10 lg:w-20 p-1"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" />
+                <img class="w-10 lg:w-20 p-1"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-plain.svg" />
+                <img class="w-10 lg:w-20 p-1"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" />
+                <img class="w-10 lg:w-20 p-1"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" />
+                <img class="w-10 lg:w-20 p-1"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" />
+                <img class="w-10 lg:w-20 p-1"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+                <img class="w-10 lg:w-20 p-1"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg" />
+                <img class="w-10 lg:w-20 p-1"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" />
+                <img class="w-10 lg:w-20 p-1"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
+                <img class="w-10 lg:w-20 p-1"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" />
+                <img class="w-10 lg:w-20 p-1"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" />
+                <img class="w-10 lg:w-20 p-1"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jetbrains/jetbrains-original.svg" />
+                <img class="w-10 lg:w-20 p-1"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" />
+                <img class="w-10 lg:w-20 p-1"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" />
+                <img class="w-10 lg:w-20 p-1"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original-wordmark.svg" />
+                <img class="w-10 lg:w-20 p-1"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg" />
+                <img class="w-10 lg:w-20 p-1"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" />
+                <img class="w-10 lg:w-20 p-1"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
+                <img class="w-10 lg:w-20 p-1"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" />
+                <img class="w-10 lg:w-20 p-1"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
             </div>
-        </section>
-        <section id="career-path">
-            <h3 class="font-bold mb-2">Mon expérience professionnelle</h3>
-            <ul>
-                <li class="space-y-2">
-                    <img class="w-3/4" src="./assets/job1.png" alt="Logo de Mecatechnic">
-                    <hr class="w-full">
-                    <p class="text-sm">Alternance, septembre 2022-novembre 2023, Wambrechies (59)</p>
-                    <ul class="list-disc space-y-2 px-4 text-sm">
-                        <li>Intégration d'outils internes au sein des services de l'entreprise</li>
-                        <li>Refonte du design du site e-commerce</li>
-                        <li>Refactorisation du code existant</li>
-                        <li>Transition de l'entreprise en marketplace</li>
-                        <li>Création de “landing pages” pour les opérations commerciales</li>
-                        <li><span class="underline">Technos : </span> PHP, Symfony, React.js, MUI, Sass, Docker, Nest.js</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-        <section id="studies" class="lg:w-[48%]">
-            <h3 class="font-bold mb-2">Mon parcours</h3>
-            <ol class="list-decimal space-y-3 px-4">
-                <li>
-                    <h4 class="mb-2 underline decoration-2 decoration-indigo-400">Bachelor Concepteur/Développeur
-                        d'applications
-                        (bac+3), Epsi Bordeaux, 2023-2024</h4>
-                    <ul class="list-disc text-sm">
-                        <li>Développer des solutions applicatives adaptées à l’infrastructure en langage objet : java,
-                            python, etc.</li>
-                        <li>Tester et intégrer de façon continue des solutions applicatives adaptées à l’infrastructure.
-                        </li>
-                        <li>Créer du code avec intégration et livraison continues.</li>
-                        <li>Concevoir et améliorer des bases de données.</li>
-                        <li>Exploiter des bases de données dans un environnement client-serveur.</li>
-                    </ul>
-                </li>
-                <li>
-                    <h4 class="mb-2 underline decoration-2 decoration-orange-400">Développeur/Intégrateur web (bac+2),
-                        Web@cadémie Epitech Lille, 2021-2023</h4>
-                    <ul class="list-disc text-sm">
-                        <li>Analyser et comprendre les besoins exprimés dans le cahier des charges en rédigeant les
-                            spécifications techniques détaillées et en les traduisant en solution web afin de
-                            sélectionner une solution de type Framework ou de réaliser le site à partir de zéro.</li>
-                        <li>Concevoir l’architecture du site en identifiant l’ensemble des informations présentes et en
-                            définissant la structure de l’information afin découper et structurer l’ensemble des
-                            informations du site et de créer ou d’adapter la base de données.
-                        </li>
-                        <li>Développer le site web et ses applications en sélectionnant les langages de programmation
-                            appropriés et en transcrivant les fonctionnalités en ligne de code selon le modèle MVC tout
-                            en respectant les normes d’accessibilité, d’ergonomie et de référencement afin de répondre
-                            aux besoins exprimés dans le cahier des charges</li>
-                        <li> Élaborer et mettre en œuvre un plan de test en concevant les différents tests unitaire et
-                            d’intégration afin de vérifier que l’ensemble des fonctionnalités développées fonctionne
-                            bien séparément et à l’unisson.</li>
-                        <li>Apporter un support technique en réalisant la documentation technique et fonctionnelle, en
-                            participant à la formation du client, en surveillant l’application après son lancement, en
-                            réalisant les corrections et modifications nécessaires ainsi qu’en dépannant les
-                            utilisateurs pour garantir la disponibilité et la qualité des applications informatiques qui
-                            sont en exploitation.</li>
-                        <li> Ajuster la solution web de l’entreprise en mettant en place une procédure de veille des
-                            besoins de l’entreprise et technologique afin d’identifier les réajustements nécessaires,
-                            l’intérêt de nouveaux développements et de rédiger les propositions/préconisations de
-                            développement. </li>
-                    </ul>
-                </li>
-                <li>
-                    <h4 class="mb-2 underline decoration-2 decoration-cyan-400">L1 Licence langues étrangères appliqués
-                        anglais-espagnol, Université Bordeaux Montaigne, 2019-2020</h4>
-                </li>
-                <li>
-                    <h4 class="mb-2 underline decoration-2 decoration-pink-500">Baccalauréat Economique & Sociale, Lycée
-                        Sud Médoc/La Boétie, 2019</h4>
-                    <ul class="list-disc text-sm">
-                        <li>Mention bien</li>
-                        <li>Section européenne</li>
-                    </ul>
-                </li>
-            </ol>
         </section>
         <section id="projects" class="space-y-5 lg:w-[48%]">
             <h3 class="font-bold mb-2">Mes projets</h3>
@@ -212,10 +148,10 @@
                             voyage
                         </p>
                         <p class="text-sm"><strong>Technos</strong> : Next.js, Nest.js, Mongodb</p>
-                        <a class="text-sm underline decoration-indigo-400 hover:decoration-orange-600 hover:decoration-2" target="_blank"
-                            href="https://github.com/LLEGIT/bemyguide">Lien Github (frontend)</a>
-                        <a class="text-sm underline decoration-indigo-400 hover:decoration-orange-600 hover:decoration-2" target="_blank"
-                            href="https://github.com/LLEGIT/bemyguide-api">Lien Github (backend)</a>
+                        <a class="text-sm underline decoration-indigo-400 hover:decoration-orange-600 hover:decoration-2"
+                            target="_blank" href="https://github.com/LLEGIT/bemyguide">Lien Github (frontend)</a>
+                        <a class="text-sm underline decoration-indigo-400 hover:decoration-orange-600 hover:decoration-2"
+                            target="_blank" href="https://github.com/LLEGIT/bemyguide-api">Lien Github (backend)</a>
                     </div>
                 </div>
                 <div class="project lg:w-[48%]">
@@ -224,8 +160,8 @@
                     <div class="hidden w-full p-4 flex flex-col gap-1 border-solid border-2">
                         <p class="text-sm">Réplique du célèbre jeu en ligne Skribbl.io</p>
                         <p class="text-sm"><strong>Technos</strong> : React.js, Typescript, Golang, MySQL</p>
-                        <a class="text-sm underline decoration-indigo-400 hover:decoration-orange-600 hover:decoration-2" target="_blank"
-                            href="https://github.com/LLEGIT/skribbl.go">Lien Github</a>
+                        <a class="text-sm underline decoration-indigo-400 hover:decoration-orange-600 hover:decoration-2"
+                            target="_blank" href="https://github.com/LLEGIT/skribbl.go">Lien Github</a>
                     </div>
                 </div>
                 <div class="project lg:w-[48%]">
@@ -234,8 +170,8 @@
                     <div class="hidden w-full p-4 flex flex-col gap-1 border-solid border-2">
                         <p class="text-sm">Portfolio de moi-même en React.js</p>
                         <p class="text-sm"><strong>Technos</strong> : React.js, EmailJS, GoogleMapsApi</p>
-                        <a class="text-sm underline decoration-indigo-400 hover:decoration-orange-600 hover:decoration-2" target="_blank"
-                            href="https://github.com/LLEGIT/my-portfolio">Lien Github</a>
+                        <a class="text-sm underline decoration-indigo-400 hover:decoration-orange-600 hover:decoration-2"
+                            target="_blank" href="https://github.com/LLEGIT/my-portfolio">Lien Github</a>
                     </div>
                 </div>
                 <div class="project lg:w-[48%]">
@@ -244,49 +180,18 @@
                     <div class="hidden w-full p-4 flex flex-col gap-1 border-solid border-2">
                         <p class="text-sm">Réseau social inspiré de Twitter et de des fonctionnalités</p>
                         <p class="text-sm"><strong>Technos</strong> : PHP, JavaScript, MySQL</p>
-                        <a class="text-sm underline decoration-indigo-400 hover:decoration-orange-600 hover:decoration-2" target="_blank"
-                            href="https://github.com/LLEGIT/fake_social_network">Lien Github</a>
+                        <a class="text-sm underline decoration-indigo-400 hover:decoration-orange-600 hover:decoration-2"
+                            target="_blank" href="https://github.com/LLEGIT/fake_social_network">Lien Github</a>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="contact" class="lg:w-[48%]">
-            <h3 class="font-bold mb-2">Contact</h3>
-            <form id="contact-form" action="/" method="post"
-                class="flex flex-col gap-5 p-2 border-dotted border-black border lg:w-[50%]">
-                <div class="flex justify-between">
-                    <label for="gender">Monsieur/Madame</label>
-                    <select class="border-solid border-black border" name="gender" id="gender">
-                        <option value="mr">M.</option>
-                        <option value="mrs">Mme</option>
-                        <option value="other">Autre</option>
-                    </select>
-                </div>
-                <div class="flex justify-between">
-                    <label for="firstname">Prénom</label>
-                    <input class="border-solid border-black border" type="text" name="firstname" id="firstname"
-                        placeholder="Ecrivez ici..." required />
-                </div>
-                <div class="flex justify-between">
-                    <label for="lastname">Nom</label>
-                    <input class="border-solid border-black border" type="text" name="lastname" id="lastname"
-                        placeholder="Ecrivez ici..." required />
-                </div>
-                <div class="flex justify-between">
-                    <label for="email">Email</label>
-                    <input class="border-solid border-black border" type="email" name="email" id="email"
-                        placeholder="Ecrivez ici..." required />
-                </div>
-                <div>
-                    <label for="message">Message</label>
-                    <textarea class="w-full border-solid border-black border" name="message" id="message" cols="30"
-                        rows="8" placeholder="Votre message..." required></textarea>
-                </div>
-                <button class="border-solid border-black border" type="submit">Envoyer</button>
-            </form>
-        </section>
     </div>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <footer class="w-full p-2 bg-[#3ef694] flex flex-col items-center">
+        <p class="text-md">théo<span class="font-bold">gillet</span></p>
+        <p class="text-sm">Développeur web & applications</p>
+        <a href="mailto:theogillet.bordeaux@outlook.com"><span class="underline">M'écrire un mail</span> 🢅</a>
+    </footer>
     <script src="./script.js"></script>
 </body>
 

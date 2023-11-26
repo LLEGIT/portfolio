@@ -1,38 +1,37 @@
+let burgerMenuIcon = document.querySelector("#menu-icon");
+let burgerMenu = document.querySelector("#menu");
+let burgerLinks = document.querySelectorAll(".menu-link")
+
 document.addEventListener("DOMContentLoaded", function () {
-  let projectcContainers = document.querySelectorAll(".project");
-  projectcContainers.forEach((project) => {
-    project.addEventListener("click", function () {
-      let previouslyOpened = document.querySelector(".clicked") ?? null;
+  burgerMenuIcon.addEventListener("click", () => {
+    toggleMenu(burgerMenu);
+  });
 
-      if (previouslyOpened) {
-        previouslyOpened.classList.toggle("clicked");
-        resetProjectView(previouslyOpened);
-      }
+  document.addEventListener("click", (event) => {
+    hideMenu(event, burgerMenuIcon, burgerMenu);
+  });
 
-      if (previouslyOpened === project) {
-        toggleProjectView(project);
-      } else {
-        project.classList.toggle("clicked");
-        toggleProjectView(project);
-      }
-    });
+  burgerLinks.forEach((link) => {
+    link.addEventListener("click", toggleMenuLink);
   });
 });
 
-function toggleProjectView(project) {
-  let imagePreview = project.querySelector("img");
-  let imageHeight = imagePreview.offsetHeight;
-  imagePreview.classList.toggle("hidden");
-
-  let projectInfos = project.querySelector("div");
-  projectInfos.style.height = imageHeight + "px";
-  projectInfos.classList.toggle("hidden");
+function toggleMenu(burgerMenu) {
+  burgerMenu.classList.toggle("hidden");
 }
 
-function resetProjectView(project) {
-  let imagePreview = project.querySelector("img");
-  imagePreview.classList.remove("hidden");
+function hideMenu(event, burgerMenuIcon, burgerMenu) {
+  if (event.target === burgerMenuIcon || event.target === burgerMenu) {
+    return;
+  }
 
-  let projectInfos = project.querySelector("div");
-  projectInfos.classList.add("hidden");
+  burgerMenu.classList.add("hidden");
+}
+
+function toggleMenuLink(event) {
+  burgerLinks.forEach((link) => {
+    link.classList.remove("bg-black", "text-white");
+  });
+
+  event.target.classList.add("bg-black", "text-white");
 }
