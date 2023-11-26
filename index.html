@@ -13,7 +13,8 @@
 </head>
 
 <body class="font-mono">
-    <header class="w-full p-2 bg-[#3ef694] flex items-top justify-between fixed top-0 left-0 border-solid border-b-2 border-black">
+    <header
+        class="w-full p-2 bg-[#3ef694] flex items-top justify-between fixed top-0 left-0 border-solid border-b border-black">
         <div>
             <h1 class="text-2xl">théo<span class="font-bold">gillet</span></h1>
             <h2 class="text-md">Développeur web & applications</h2>
@@ -34,7 +35,8 @@
     <div class="mt-20 space-y-5 lg:space-y-0 lg:flex lg:flex-wrap lg:justify-between lg:gap-10">
         <section id="bio" class="space-y-2 lg:w-[48%] p-3">
             <h3 class="text-xl p-2 bg-black text-white w-fit">Qui suis-je ?</h3>
-            <h4 class="font-bold mb-2">Développeur junior intrigué par la création d'applications réactives qui font
+            <h4 class="text-2xl font-bold mb-2">Développeur junior intrigué par la création d'applications réactives qui
+                font
                 sens...</h4>
             <p class="text-justify text-sm">Théo, 22 ans, habitant dans la banlieue bordelaise... Bon, vous connaissez
                 la
@@ -77,9 +79,11 @@
             <p class="text-sm text-justify">A travers mes études et mon parcours professionnel (<a
                     class="underline decoration-2 decoration-[#3ef694]" href="./assets/resume.pdf" download>cf. mon
                     cv</a>), j'ai pu développer des compétences techniques aussi bien du côté client que serveur d'une
-                application. Je saurais être un atout dans le <span class="underline decoration-2">développement de votre
+                application. Je saurais être un atout dans le <span class="underline decoration-2">développement de
+                    votre
                     business</span> en ligne, votre outil de gestion, votre ERP, etc. Voici une <span
-                    class="underline decoration-2">liste non exhaustive</span> de langages/frameworks ou outils avec lesquels j'ai
+                    class="underline decoration-2">liste non exhaustive</span> de langages/frameworks ou outils avec
+                lesquels j'ai
                 d'ores et déjà pu travailler :</p>
 
             <div class="flex flex-wrap gap-1">
@@ -137,60 +141,87 @@
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
             </div>
         </section>
-        <section id="projects" class="space-y-5 lg:w-[48%]">
-            <h3 class="font-bold mb-2">Mes projets</h3>
-            <div class="lg:flex lg:flex-wrap lg:justify-between lg:gap-5">
+        <section id="projects" class="space-y-5 lg:w-[48%] p-3">
+            <h3 class="text-xl p-2 bg-black text-white w-fit">Mes projets</h3>
+            <div class="space-y-10">
                 <div class="project lg:w-[48%]">
-                    <h4 class="mb-2 underline decoration-2">Bemyguide (2023)</h4>
-                    <img src="./assets/project1.png" alt="Bemyguide image projet">
-                    <div class="hidden w-full p-4 flex flex-col gap-1 border-solid border-2">
+                    <h4 class="text-2xl font-bold mb-2">Mecatechnic.com (2023)</h4>
+                    <div class="space-y-2">
+                        <p class="text-sm">Refonte du site ecommerce, intégration de landings page pour les opérations
+                            commerciales (Black Friday, soldes été, etc.)
+                        </p>
+                        <p class="text-sm p-2 bg-black text-white"><strong>Technos</strong> : <span class="bg-emerald-600">PHP Symfony</span>,
+                            <span class="bg-emerald-600">Sass</span>, <span class="bg-emerald-600">Docker</span>, <span
+                                class="bg-emerald-600">jQuery</span>
+                        </p>
+                        <a class="text-sm underline decoration-2 decoration-emerald-200 hover:decoration-orange-600 hover:decoration-2"
+                            target="_blank" href="https://www.mecatechnic.com">Lien du site</a>
+                    </div>
+                    <img class="mt-5" src="./assets/project1.png" alt="Bemyguide image projet">
+                </div>
+                <div class="project lg:w-[48%]">
+                    <h4 class="text-2xl font-bold mb-2">Bemyguide (2023)</h4>
+                    <div class="space-y-2">
                         <p class="text-sm">Plateforme touristique pour s'informer sur une destination et planifier un
                             voyage
                         </p>
-                        <p class="text-sm"><strong>Technos</strong> : Next.js, Nest.js, Mongodb</p>
-                        <a class="text-sm underline decoration-indigo-400 hover:decoration-orange-600 hover:decoration-2"
+                        <p class="text-sm p-2 bg-black text-white"><strong>Technos</strong> : <span class="bg-emerald-600">Next.js</span>, <span
+                                class="bg-emerald-600">Nest.js</span>, <span class="bg-emerald-600">Mongodb</span></p>
+                        <a class="text-sm underline decoration-2 decoration-emerald-200 hover:decoration-orange-600 hover:decoration-2"
                             target="_blank" href="https://github.com/LLEGIT/bemyguide">Lien Github (frontend)</a>
-                        <a class="text-sm underline decoration-indigo-400 hover:decoration-orange-600 hover:decoration-2"
+                        <a class="text-sm underline decoration-2 decoration-emerald-200 hover:decoration-orange-600 hover:decoration-2"
                             target="_blank" href="https://github.com/LLEGIT/bemyguide-api">Lien Github (backend)</a>
                     </div>
+                    <img class="mt-5" src="./assets/project2.png" alt="Bemyguide image projet">
                 </div>
                 <div class="project lg:w-[48%]">
-                    <h4 class="mb-2 underline decoration-2">Skribbl.go (2023)</h4>
-                    <img src="./assets/project2.png" alt="Skribbl.go image projet">
-                    <div class="hidden w-full p-4 flex flex-col gap-1 border-solid border-2">
+                    <h4 class="text-2xl font-bold mb-2">Skribbl.go (2023)</h4>
+                    <div class="space-y-2">
                         <p class="text-sm">Réplique du célèbre jeu en ligne Skribbl.io</p>
-                        <p class="text-sm"><strong>Technos</strong> : React.js, Typescript, Golang, MySQL</p>
-                        <a class="text-sm underline decoration-indigo-400 hover:decoration-orange-600 hover:decoration-2"
+                        <p class="text-sm p-2 bg-black text-white"><strong>Technos</strong> : <span class="bg-emerald-600">React.js</span>, <span
+                                class="bg-emerald-600">Typescript</span>, <span class="bg-emerald-600">Golang</span>, <span
+                                class="bg-emerald-600">MySQL</span></p>
+                        <a class="text-sm underline decoration-2 decoration-emerald-200 hover:decoration-orange-600 hover:decoration-2"
                             target="_blank" href="https://github.com/LLEGIT/skribbl.go">Lien Github</a>
                     </div>
+                    <img class="mt-5" src="./assets/project3.png" alt="Skribbl.go image projet">
                 </div>
                 <div class="project lg:w-[48%]">
-                    <h4 class="mb-2 underline decoration-2">Portfolio React (2023)</h4>
-                    <img src="./assets/project3.png" alt="Portfolio React image projet">
-                    <div class="hidden w-full p-4 flex flex-col gap-1 border-solid border-2">
+                    <h4 class="text-2xl font-bold mb-2">Portfolio React (2023)</h4>
+                    <div class="space-y-2">
                         <p class="text-sm">Portfolio de moi-même en React.js</p>
-                        <p class="text-sm"><strong>Technos</strong> : React.js, EmailJS, GoogleMapsApi</p>
-                        <a class="text-sm underline decoration-indigo-400 hover:decoration-orange-600 hover:decoration-2"
+                        <p class="text-sm p-2 bg-black text-white"><strong>Technos</strong> : <span class="bg-emerald-600">React.js</span>, <span class="bg-emerald-600">EmailJS</span> , <span class="bg-emerald-600">GoogleMapsApi</span></p>
+                        <a class="text-sm underline decoration-2 decoration-emerald-200 hover:decoration-orange-600 hover:decoration-2"
                             target="_blank" href="https://github.com/LLEGIT/my-portfolio">Lien Github</a>
                     </div>
+                    <img class="mt-5" src="./assets/project4.png" alt="Portfolio React image projet">
                 </div>
                 <div class="project lg:w-[48%]">
-                    <h4 class="mb-2 underline decoration-2">Fake social network (2022)</h4>
-                    <img src="./assets/project4.jpg" alt="Fake social network image projet">
-                    <div class="hidden w-full p-4 flex flex-col gap-1 border-solid border-2">
+                    <h4 class="text-2xl font-bold mb-2">Fake social network (2022)</h4>
+                    <div class="space-y-2">
                         <p class="text-sm">Réseau social inspiré de Twitter et de des fonctionnalités</p>
-                        <p class="text-sm"><strong>Technos</strong> : PHP, JavaScript, MySQL</p>
-                        <a class="text-sm underline decoration-indigo-400 hover:decoration-orange-600 hover:decoration-2"
+                        <p class="text-sm p-2 bg-black text-white"><strong>Technos</strong> : <span class="bg-emerald-600">PHP</span>, <span class="bg-emerald-600">JavaScript</span>, <span class="bg-emerald-600">MySQL</span></p>
+                        <a class="text-sm underline decoration-2 decoration-emerald-200 hover:decoration-orange-600 hover:decoration-2"
                             target="_blank" href="https://github.com/LLEGIT/fake_social_network">Lien Github</a>
                     </div>
+                    <img class="mt-5" src="./assets/project5.jpg" alt="Fake social network image projet">
                 </div>
             </div>
         </section>
     </div>
-    <footer class="w-full p-2 bg-[#3ef694] flex flex-col items-center">
+    <footer class="w-full p-2 bg-[#3ef694] flex flex-col border-solid border-t border-black mt-5">
         <p class="text-md">théo<span class="font-bold">gillet</span></p>
         <p class="text-sm">Développeur web & applications</p>
-        <a href="mailto:theogillet.bordeaux@outlook.com"><span class="underline">M'écrire un mail</span> 🢅</a>
+        <div class="flex flex-wrap items-center gap-5">
+            <a class="text-sm" href="mailto:theogillet.bordeaux@outlook.com"><span class="underline">M'écrire un
+                    mail</span>🢅</a>
+            <a href="https://www.linkedin.com/in/theogillet/" target="_blank">
+                <img class="w-6" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg" />
+            </a>
+            <a href="https://www.github.com/LLEGIT" target="_blank">
+                <img class="w-6" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+            </a>
+        </div>
     </footer>
     <script src="./script.js"></script>
 </body>
