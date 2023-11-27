@@ -14,17 +14,17 @@
     <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
 </head>
 
-<body>
+<body class="cursor-crosshair">
     <div
         class="lg:px-24 lg:mx-[15%] lg:py-5 lg:flex lg:justify-between lg:items-center lg:border-solid lg:border-l-8 lg:border-r lg:border-black">
         <header
-            class="w-full lg:w-fit p-2 bg-[#3ef694] flex items-top justify-between fixed top-0 left-0 border-solid border-b border-black lg:border-2 lg:p-4 lg:relative z-20">
+            class="w-full lg:w-fit p-2 bg-[#3ef694] hover:bg-[#e5e5f7] flex items-top justify-between fixed top-0 left-0 border-solid border-b border-black lg:border-2 lg:p-4 lg:relative z-20">
             <div>
                 <h1 class="text-2xl lg:text-3xl">théo<span class="font-bold">gillet</span></h1>
                 <h2 class="text-md">Développeur web & applications</h2>
             </div>
             <div class="lg:hidden">
-                <img id="menu-icon" class="w-5"
+                <img id="menu-icon" class="w-7"
                     src="https://cdn.icon-icons.com/icons2/2024/PNG/512/lines_menu_burger_icon_123889.png"
                     alt="Icône menu burger">
             </div>
@@ -41,7 +41,7 @@
     <div class="lg:p-0 mt-20 lg:mt-0 space-y-5 lg:space-y-0 lg:flex lg:flex-wrap lg:justify-between">
         <div class="lg:px-[15%] lg:border-y lg:border-solid lg:border-black background-diagonal">
             <section id="bio" class="p-5 lg:p-0 space-y-2 lg:py-24 lg:px-24 lg:border-solid lg:border-black lg:border-l lg:border-r-8 bg-white">
-                <h3 class="text-xl p-2 bg-black text-white w-fit">Qui suis-je ?</h3>
+                <h3 class="text-xl p-2 bg-black text-white w-fit hover:bg-transparent hover:border-solid hover:border-black hover:border hover:text-black">Qui suis-je ?</h3>
                 <h4 class="text-2xl font-bold mb-2">Développeur junior intrigué par la création d'applications
                     réactives
                     qui
@@ -99,8 +99,8 @@
 
         <div class="lg:px-[15%]">
             <section id="skills"
-                class="p-5 lg:p-0 bg-emerald-100 space-y-4 lg:py-24 lg:px-24 lg:border-solid lg:border-black lg:border-l-8 lg:border-r">
-                <h3 class="text-xl p-2 bg-black text-white w-fit">Mes compétences</h3>
+                class="p-5 lg:p-0 bg-emerald-100 space-y-4 lg:py-24 lg:px-24 lg:border-solid lg:border-black lg:border-l-8 lg:border-r cursor-help">
+                <h3 class="text-xl p-2 bg-black text-white w-fit hover:bg-transparent hover:border-solid hover:border-black hover:border hover:text-black">Mes compétences</h3>
                 <p class="text-sm text-justify">De part mes études et mon parcours professionnel (<a
                         class="underline decoration-2 decoration-[#3ef694]" href="./assets/resume.pdf" download>voir
                         cv</a>), j'ai pu développer des compétences techniques aussi bien du côté client que serveur
@@ -170,8 +170,8 @@
         </div>
 
         <div class="lg:px-[15%] lg:border-solid lg:border-black lg:border-t background-diagonal">
-            <section id="projects" class="p-5 lg:p-0 space-y-5 lg:py-24 lg:px-24 lg:border-solid lg:border-black lg:border-l lg:border-r-8 bg-white">
-                <h3 class="text-xl p-2 bg-black text-white w-fit">Mes projets</h3>
+            <section id="projects" class="p-5 lg:p-0 space-y-5 lg:py-24 lg:px-24 lg:border-solid lg:border-black lg:border-l lg:border-r-8 bg-white cursor-wait">
+                <h3 class="text-xl p-2 bg-black text-white w-fit hover:bg-transparent hover:border-solid hover:border-black hover:border hover:text-black">Mes projets</h3>
                 <div class="space-y-10">
                     <div class="project">
                         <h4 class="text-2xl font-bold mb-2">Mecatechnic.com (2023)</h4>
@@ -254,7 +254,7 @@
     </div>
     
     <footer
-        class="w-full p-2 bg-[#3ef694] flex flex-col border-solid border-t border-black lg:h-56 lg:justify-center lg:items-center">
+        class="w-full p-2 flex flex-col border-solid border-t border-black lg:h-56 lg:justify-center lg:items-center background-boxes bg-[#b0b9b645]">
         <p class="text-md lg:text-2xl">théo<span class="font-bold">gillet</span></p>
         <p class="text-sm lg:text-md">Développeur web & applications</p>
         <div class="flex flex-wrap items-center gap-5">
