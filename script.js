@@ -56,7 +56,7 @@ function moveEasterEgg(event) {
     }, 1000);
     return;
   } else {
-    let randomTop = (document.documentElement.scrollHeight / (Math.random() * 10)) + "px";
+    let randomTop = (document.documentElement.offsetHeight / (Math.random() * 10)) + "px";
     let randomLeft = Math.floor(Math.random() * 98) + "vw";
 
     event.target.style.top = randomTop;
