@@ -23,7 +23,6 @@ document.addEventListener("DOMContentLoaded", function () {
     link.addEventListener("click", handleLinkClick);
   });
 
-  easterEgg.addEventListener("click", moveEasterEgg);
 });
 
 function toggleMenu(burgerMenu) {
@@ -44,25 +43,4 @@ function toggleMenuLink(event) {
   });
 
   event.target.classList.add("bg-black", "text-white");
-}
-
-function moveEasterEgg(event) {
-  if (easterEggCount === easterEggIteration) {
-    event.target.src =
-      "https://img1.picmix.com/output/stamp/normal/0/5/3/4/534350_587dd.gif";
-
-    setTimeout(() => {
-      event.target.remove();
-    }, 1000);
-    return;
-  } else {
-    let randomTop = (document.documentElement.offsetHeight / (Math.random() * 10)) + "px";
-    let randomLeft = Math.floor(Math.random() * 98) + "vw";
-
-    event.target.style.top = randomTop;
-    event.target.style.left = randomLeft;
-    console.log(event.target.style.top);
-  }
-
-  easterEggIteration++;
 }
