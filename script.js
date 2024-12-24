@@ -1,9 +1,6 @@
 let burgerMenuIcon = document.querySelector("#menu-icon");
 let burgerMenu = document.querySelector("#menu");
 let burgerLinks = document.querySelectorAll(".menu-link");
-let easterEgg = document.querySelector("#easter-egg");
-let easterEggIteration = 0;
-let easterEggCount = Math.floor(Math.random() * 10);
 
 document.addEventListener("DOMContentLoaded", function () {
   burgerMenuIcon.addEventListener("click", () => {
