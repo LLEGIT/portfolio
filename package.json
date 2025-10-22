@@ -5,11 +5,12 @@
   "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "npx tailwindcss -i ./style.css -o ./build.css"
+    "build-css": "npx tailwindcss -i ./style.css -o ./build.css",
+    "build-css:dev": "npx tailwindcss -i ./style.css -o ./build.css --watch"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "tailwindcss": "^3.4.16"
+    "tailwindcss": "3.4.16"
   }
 }
